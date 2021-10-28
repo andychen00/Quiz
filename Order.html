@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a class="logo" href="Home.html"
+        ><img class="king" src="Asset/crown.png" alt="king icon" />BURGERKING
+      </a>
+      <ul>
+        <li><a class="menu" href="Home.html">Home</a></li>
+        <li><a class="menu" href="Menu.html">Menu</a></li>
+        <li><a class="menu" href="Order.html">Order</a></li>
+        <li>
+          <a class="menu" href="ComingSoonBurger.html">ComingSoon</a>
+        </li>
+        <li><a class="menu" href="AboutUs.html">AboutUs</a></li>
+      </ul>
+    </nav>
+    <div id="menu-order">
+      <form action="#" class="form">
+        <h2 class="menu-title order-title">Order Menu</h2>
+        <input
+          type="text"
+          name="username"
+          class="textbox"
+          placeholder="Full Name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          class="textbox"
+          placeholder="Email"
+          required
+        />
+        <select name="selected" id="selected" class="textbox" required>
+          <option value="" disabled selected hidden>Select a menu</option>
+          <option value="Whopper">Whopper</option>
+          <option value="CheeseBurger">CheeseBurger</option>
+          <option value="Double CheeseBurger">Double CheeseBurger</option>
+          <option value="Triples CheeseBurger">Triples CheeseBurger</option>
+          <option value="Mozzarella CheeseBurger">
+            Mozzarella CheeseBurger
+          </option>
+          <option value="Mushroom Swiss">Mushroom Swiss</option>
+          <option value="BK Single">BK Single</option>
+          <option value="BK Doubles">BK Doubles</option>
+          <option value="BBQ Steak Beef">BBQ Steak Beef</option>
+          <option value="Cola-Cola/Pepsi">Cola-Cola/Pepsi</option>
+        </select>
+        <input
+          type="number"
+          name="quantity"
+          value="1"
+          min="1"
+          class="textbox"
+          placeholder="Burger's Quantity"
+        />
+        <input
+          type="text"
+          name="address"
+          class="textbox"
+          placeholder="Address"
+          required
+        />
+        <div class="checkbox">
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="agree">Agreement with term and conditions</label>
+        </div>
+        <button class="order">Order</button>
+      </form>
+    </div>
+  </body>
+</html>
